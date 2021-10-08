@@ -56,6 +56,36 @@ a {
 a:hover {
   color: #ff8000;
 }
+/* Groups of Lists */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  margin-top: 1rem;
+}
+/* UI Buttons */
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem; /* 16px */
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+button:hover {
+  border: 0.11rem #404040 solid;
+}
+button.primary {
+  background-color: #f0c040;
+}
+button.block {
+  width: 100%;
+}
 /* Header */
 header a {
   color: #ffff;
@@ -77,6 +107,19 @@ a.brand {
 .row.center {
   justify-content: center;
 }
+/* Points the row to the up EG: ProductScreen */
+.row.top {
+  align-items: flex-start;
+}
+/* Column for price and info in ProductScreen */
+.col-1 {
+  /* Make it 1 of 4 / Make it shrinkable / Set the size to 25rem */
+  flex: 1 1 25rem;
+}
+.col-2 {
+  /* Make it 2 of 4 / Make it shrinkable / Set the size to 45rem */
+  flex: 2 1 45rem;
+}
 /* Image */
 img {
   border-radius: 0.5;
@@ -85,7 +128,9 @@ img.medium {
   max-width: 22rem;
   width: 100%;
 }
-
+img.large {
+  width: 100%;
+}
 /* Card */
 .card {
   border: 0.1rem #c0c0c0 solid;
@@ -112,4 +157,12 @@ img.medium {
 
 .rating span:last-child {
   color: #404004;
+}
+
+/* Alert */
+.success {
+  color: #20a020;
+}
+.error {
+  color: #a02020;
 }
